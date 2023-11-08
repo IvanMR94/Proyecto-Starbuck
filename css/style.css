@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /*estilo de la letra en toda la web */
+}
+
+/*permite que al subrayar se perzonalice*/
+*::selection{
+    background: #006241;
+    color: #fff;
+}
+
+/* HEADER */
+
+.header{
+    background: #006241;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header__logo{
+    width: 30px;
+
+}
+
+.header__contenedorIcono{
+    display: none;
+}
+
+.header__contenedorNavBar, .header__contenedorIcono{
+    display: none;
+}
+
+.header__contenedorIconoMobile i{
+    color: #fff;
+    font-size: 25px;
+}
+
+.main__contenedorImg{
+    display: none;
+}
+
+.main{
+    margin-top: 85px;
+    padding: 15px 15px 60px;
+}
+
+
+.main__h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.main__h1 span{
+    color: #006241;
+}
+
+.main__p{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.main__contenedorTexto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* GALERIA */
+
+.galeria{
+    background: #006241;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria__img{
+    width: 85%;
+    margin-top: 15px;
+}
+
+
+/* CONTACTANOS */
+
+.contacto{
+    background: #0e0e0e;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+
+.contacto__titulo{
+    color: #006241;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.contacto__formulario{
+    background: #006241;
+    padding: 15px;
+    color: #fff;
+    width: 280px;
+}
+
+.contacto__campo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.contacto__campo label{
+    font-size: 14px;
+}
+
+
+.contacto__campo input::placeholder,
+.contacto__campo textarea::placeholder{
+    font-size: 12px;
+    color: #006241;
+    font-weight: bolder;
+}
+
+.contacto__campo input, 
+.contacto__campo textarea{
+    padding: 5px;
+    border-radius: 7.5px;
+    border: 0;
+}
+
+.contacto__campo input:focus, 
+.contacto__campo textarea:focus{
+    background: #000;
+    color: #fff;
+}
+
+.contacto__btn{
+    background: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 45%;
+    margin-top: 20px;
+    border-radius: 7.5px;
+    padding: 4px 0;
+    transition: all 0.5s;
+}
+
+.contacto__btn:hover{
+    background: yellow;
+    border: 1px solid yellow;
+}
+
+
+/* CARDS */
+
+.cards{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cards__card{
+    background: #006241;
+    margin-top: 15px;
+    position: relative;
+    width: 85%;
+    color: #fff;
+}
+
+.cards__titulo span{
+    color: yellow;
+}
+
+.cards__contenedorCard{
+    padding: 25px 15px;
+}
+
+.cards__parrafo{
+    font-size: 14px;
+    margin: 7.5px 0 15px;
+}
+
+
+.cards__btn{
+    background: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    width: max-content;
+    margin-top: 20px;
+    border-radius: 7.5px;
+    padding: 5px 30px;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.cards__btn:hover{
+    background: yellow;
+    border: 1px solid yellow;
+}
+
+.cards__img{
+    width: 100%;
+}
+
+.cards__contenedorBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__contenedorBtn a{
+    width: 100%;
+    margin: 7.5px 0 0;
+    text-align: center;
+}
+
+.cards__circulo{
+    background: yellow;
+    width: 65px;
+    height: 65px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}
+
+/* FOOTER */
+
+.footer{
+    background: #000;
+    padding: 25px 15px;
+}
+
+
+.footer__contenedorUsuario{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__linkUsuario{
+    color: #006241;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer__contenedorSocial{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contenedorSocial i{
+    color: #006241;
+    font-size: 22px;
+}
+
+.footer__linkContacto{
+    text-decoration: none;
+    color: #028523;
+}
+
+.footer__contenedorSocial i:hover,  .footer__linkContacto:hover,
+.footer__linkUsuario:hover{
+        color: #fff;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px){
+
+    /*HEADER*/
+
+    .header__contenedorIconoMobile{
+        display: none;
+    }
+
+    .header__contenedorIcono{
+        display: block;
+    }
+
+    .header__contenedorIcono i{
+        color: #fff;
+        font-size: 28px;
+    }
+
+    .header__contenedorNavBar{
+        display: block;
+    }
+
+    .header__link{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    .header__link:hover{
+        text-decoration:underline;
+    }
+
+    /* MAIN */
+
+    .main__contenedorImg{
+        display: block;
+    }
+
+    .main__img{
+        width: 80%;
+    }
+
+    .main__contenedorTexto,
+    .main__contenedorImg{
+        width: 50%;
+    }
+
+    .main__contenedorImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        display: flex;
+        padding: 15px 30px 60px;
+    }
+
+    /*GALERIA*/
+
+    .galeria{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .galeria__img{
+        width: 30%;
+        margin-top: 0;
+    }
+
+    /*CONTACTO*/
+
+    .contacto__formulario{
+        width: 500px;
+    }
+
+    /*CARDS*/
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cards__card{
+        width: 40%;
+    }
+
+    .cards__contenedorBtn{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    /*FOOTER*/
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__contenedorSocial i:hover,  .footer__linkContacto:hover,
+    .footer__linkUsuario:hover{
+        color: #fff;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+
+    /*MAIN*/
+    .main__img{
+        width: 350px;
+    }
+
+    .main{
+        display: flex;
+        padding: 15px 100px 60px;
+    }
+
+    /*GALERIA*/
+
+    .galeria__img{
+        width: 28%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 25px; 
+        margin-right: 25px;
+    }
+
+    .galeria{
+        justify-content: center;
+    }
+
+    /*CONTACTO*/
+
+    .contacto__formulario{
+        width: 850px;
+    }
+
+    .contacto__titulo{
+        font-size: 40px;
+    }
+
+    .contacto__campo label{
+        font-size: 20px;
+    }
+
+    .contacto__campo input::placeholder,
+    .contacto__campo textarea::placeholder{
+        font-size: 17px;
+    }
+
+    .contacto__btn{
+        font-size: 17px;
+    }
+
+    /*CARDS*/
+
+    .cards__contenedorBtn{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cards__card{
+        width: 450px;
+        height: 500px;
+        margin: 20px;
+        
+    }
+
+    /*FOOTER*/
+
+    .footer{
+        height: 250px;
+        align-items: center;
+    }
+
+    .footer__linkUsuario{
+        font-size: 25px;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    .footer__contenedorSocial{
+        justify-content: center;
+    }
+
+    .footer__contenedorSocial i{
+        font-size: 45px;
+        margin: 0 15px
+    }
+
+    .footer__contenedorSocial i:hover,  .footer__linkContacto:hover,
+    .footer__linkUsuario:hover{
+        color: #fff;
+    }
+
+    .footer__linkContacto{
+        font-size: 25px;
+        margin-right: 50px;
+    }
+
+}
+
+@media (min-width: 1100px){
+
+    /*MAIN*/ 
+
+    .main__h1{
+        font-size: 70px;
+    }
+
+    .main__p{
+        font-size: 20px;
+    }
+
+    /*CARDS*/
+
+    .cards__btn{
+        width: 45%;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #btn1{
+        margin-top: 48px;
+    }
+
+    #btn4{
+        margin-top: 50px;
+    }
+
+
+}
+
+@media (min-width: 1500){
+    .cards__card{
+        width: 500px;    
+    }
+
+}
